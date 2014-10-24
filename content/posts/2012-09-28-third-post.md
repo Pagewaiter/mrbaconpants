@@ -1,7 +1,7 @@
 ---
 title: Third Post
 date: 2012-09-28
-collection: articles
+collection: posts
 template: post.html
 ---
 

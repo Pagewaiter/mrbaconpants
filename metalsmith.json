@@ -1,14 +1,14 @@
 {
-  "source": "./_posts",
-  "destination": "./_site",
+  "source": "./content",
+  "destination": "./build",
   "metadata": {
     "title": "Mr. Baconpants",
     "description": "a blog about bacon, beer, and everything else!"
   },
   "plugins": {
     "metalsmith-ignore": [
-      "_drafts/*",
-      "_posts/index.md"
+      "drafts/*",
+      "content/index.md"
     ],
     "metalsmith-drafts": {},
     "metalsmith-markdown": {},
@@ -16,15 +16,18 @@
       "pattern": ":collection/:title"
     },
     "metalsmith-collections": {
-       "articles": {
-        "pattern": "*.md",
+       "pages": {
+        "pattern": "/pages/*.md"
+      },
+        "posts": {
+        "pattern": "/posts/*.md",
         "sortBy": "date",
         "reverse": true
       }
     },
     "metalsmith-templates": {
       "engine": "handlebars",
-      "directory": "_layouts"
+      "directory": "layouts"
     }
   }
 }
