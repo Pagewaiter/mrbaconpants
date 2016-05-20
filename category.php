@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 			
 	<div id="content">
-	
+		<?php get_template_part( 'parts/page', 'header' ); ?>
 		<div id="inner-content" class="row">
 	
 		    <main id="main" class="large-8 medium-8 columns" role="main">
