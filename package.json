@@ -10,6 +10,7 @@
   "license": "GPL-2.0 AND MIT",
   "homepage": "https://github.com/JeremyEnglert/JointsWP",
   "devDependencies": {
+    "babel-preset-es2015": "^6.9.0",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.3.13",
     "babel-plugin-transform-es2015-arrow-functions": "^6.3.13",
     "babel-plugin-transform-es2015-block-scoped-functions": "^6.3.13",
